@@ -19,11 +19,11 @@ $databaseUsername = 'swatiplenarea@plenareaphpmysql';
 $databasePassword = 'Temp4now$';
 
 $con=mysqli_init(); 
-mysqli_ssl_set($con, NULL, NULL, {ca-cert filename}, NULL, NULL); 
+//mysqli_ssl_set($con, NULL, NULL, {ca-cert filename}, NULL, NULL); 
 
-$mysqli = mysqli_real_connect($con, $databaseHost, $databaseUsername, $databasePassword, $databaseName, 3306);
+//$mysqli = mysqli_real_connect($con, $databaseHost, $databaseUsername, $databasePassword, $databaseName, 3306);
 
-//$mysqli = mysqli_connect($databaseHost, $databaseUsername, $databasePassword, $databaseName); 
+$mysqli = mysqli_connect($databaseHost, $databaseUsername, $databasePassword, $databaseName); 
  if( ! $mysqli) {
     die('No connection: ' . mysqli_connect_error());
 }
